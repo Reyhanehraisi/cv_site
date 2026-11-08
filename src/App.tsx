@@ -1,16 +1,23 @@
-import { motion } from "motion/react"
+import Nav from "./components/Nav"
+import Hero from "./components/Hero"
+import About from "./components/About"
+import Tools from "./components/Tools"
+import Research from "./components/Research"
+import Designs from "./components/Designs"
+import Contact from "./components/Contact"
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-white grid place-items-center">
-      <motion.h1
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-5xl font-bold"
-      >
-        My portfolio is under construction
-      </motion.h1>
-    </main>
+    <>
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Tools />
+        <Research />
+        <Designs />
+        <Contact />
+      </main>
+    </>
   )
 }
